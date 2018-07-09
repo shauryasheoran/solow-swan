@@ -101,6 +101,7 @@ plt.plot(time_list,production_per_capita)
 plt.plot([0,time_list[-1]],[y(k_new_equilibrium),y(k_new_equilibrium)],'r-')
 plt.xlabel('time')
 plt.ylabel('Production per effective labour')
+plt.show()
 
 
 # In[ ]:
