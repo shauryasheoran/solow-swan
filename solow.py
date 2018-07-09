@@ -29,6 +29,7 @@ def breakeveninvestment(k):
 # In[34]:
 
 k=np.linspace(0.01,4,51)
+plt.subplot(3,1,1)
 plt.plot(k,y(k),'b-')
 plt.plot(k,s*y(k),'r-')
 plt.plot(k,breakeveninvestment(k),'g-')
@@ -61,7 +62,7 @@ for iter in range(no_of_iterations):
 
 
 # In[36]:
-
+plt.subplot(3,1,2)
 plt.plot(time_list,Y)
 plt.xlabel('time')
 plt.ylabel('Production')
@@ -95,6 +96,7 @@ for iter in range(no_of_iterations):
 # In[39]:
 
 k_new_equilibrium= pow(s_new/(n_new+g_new+delta),1/(1-alpha))
+plt.subplot(3,1,3)
 plt.plot(time_list,production_per_capita)
 plt.plot([0,time_list[-1]],[y(k_new_equilibrium),y(k_new_equilibrium)],'r-')
 plt.xlabel('time')
