@@ -4,7 +4,6 @@
 # In[31]:
 
 import numpy as np
-get_ipython().magic(u'matplotlib inline')
 from matplotlib import pyplot as plt 
 
 
